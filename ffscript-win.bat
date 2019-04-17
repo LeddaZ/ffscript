@@ -5,7 +5,7 @@ title ffscript by LeddaZ (Windows)
 echo This script requires ffmpeg. Follow instructions at https://github.com/LeddaZ/ffscript
 echo Run this file from the bin folder (where ffmpeg.exe is found).
 echo ----------
-echo Copy the path of the source file:
+echo Drag and drop the source file here:
 set /p input=
 echo ----------
 echo Enter the output video format (mp4, avi, etc.):
