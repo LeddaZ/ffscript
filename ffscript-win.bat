@@ -1,7 +1,7 @@
 @echo off
 cls
 color 0f
-title FFscript by LeddaZ
+title ffscript by LeddaZ
 echo This script requires ffmpeg. Follow the instructions at https://github.com/LeddaZ/ffscript
 echo Run this file from the bin folder (where ffmpeg.exe is found).
 echo ----------
@@ -11,15 +11,14 @@ echo ----------
 echo Enter the output video format (mp4, avi, etc.):
 set /p format=
 echo ----------
-echo The converted video will be saved in your Desktop. Press any key to continue.
-pause
-echo ----------
+echo Enter the output video name without extension:
+set /p name=
 title ffscript by LeddaZ - Video conversion in progress
-set filename=ffmpeg_%date%_%time%.%format%
-ffmpeg -i %input% %USERPROFILE%\Desktop\%filename%
-title ffscript by LeddaZ
+set filename=%name%.%format%
+ffmpeg -i %input% %filename%
 cls
+title ffscript by LeddaZ
 color a
-echo Video conversion finished. You can find the converted video at %USERPROFILE%\Desktop\%filename%.
+echo Video conversion finished. You can find the converted video at %cd%\%filename%.
 pause
 exit
