@@ -2,8 +2,8 @@
 cls
 color 0f
 title ffscript by LeddaZ
-echo This script requires ffmpeg. Follow the instructions at https://github.com/LeddaZ/ffscript
-echo Run this file from the bin folder (where ffmpeg.exe is found).
+echo Follow the instructions at https://github.com/LeddaZ/ffscript/setup.md#Windows
+echo to get started.
 echo ----------
 echo Drag and drop the source file here:
 set /p input=
