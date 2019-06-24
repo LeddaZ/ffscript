@@ -2,8 +2,7 @@
 cls
 color 0f
 title ffscript by LeddaZ
-echo Follow the instructions at https://github.com/LeddaZ/ffscript/setup.md#Windows
-echo to get started.
+echo Follow the instructions at https://github.com/LeddaZ/ffscript/setup.md#Windows to get started.
 echo ----------
 echo Drag and drop the source file here:
 set /p input=
