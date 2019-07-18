@@ -11,6 +11,8 @@ read FORMAT
 echo ----------
 echo Enter the output video name without extension:
 read NAME
+echo $'The converted video will be saved in your home directory.\n'
+read -n1 -rsp $'Press any key to continue...\n'
 export FILENAME=$NAME.$FORMAT
 ffmpeg -i $INPUT ~/$FILENAME
 clear

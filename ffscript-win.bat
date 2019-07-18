@@ -1,4 +1,5 @@
 @echo off
+:start
 cls
 color 0f
 title ffscript by LeddaZ
@@ -14,12 +15,18 @@ set /p format=
 echo ----------
 echo Enter the output video name without extension:
 set /p name=
+echo ----------
+echo The converted video will be saved in your Videos folder. Do you want to continue? (y/n)
+set /p opt=
+if %opt%==y goto convert
+if %opt%==n goto start
+:convert
 title ffscript by LeddaZ - Video conversion in progress
 set filename=%name%.%format%
-ffmpeg -i %input% %filename%
+ffmpeg -i %input% %USERPROFILE%\Videos\%filename%
 cls
 title ffscript by LeddaZ
 color a
-echo Video conversion finished. You can find the converted video at %cd%\%filename%.
+echo Video conversion finished. You can find the converted video at %USERPROFILE%\Videos\%filename%.
 pause
 exit
