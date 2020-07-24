@@ -1,3 +1,5 @@
+# ffscript is discontinued. Use [PyPEG](https://github.com/LeddaZ/PyPEG) instead.
+
 # ffscript
 A simple script to automate video conversion with ffmpeg on Windows and Linux. Check the [official ffmpeg website](https://ffmpeg.org/) for ffmpeg updates.
 # Usage
